@@ -49,15 +49,6 @@
                         您于前14天内到达或途经：<a data-v-97f79f28="" class="addr"></a>
                     </p>
                 </div>
-                <script>
-                    const urlParams = new URLSearchParams(window.location.search);
-                    document.querySelector(".hidden-tel").textContent = urlParams.get("phone") + "的动态行程卡";
-                    document.querySelector(".update").textContent = "更新于：" + moment().format("YYYY.MM.DD HH:mm:ss");
-                    document.querySelector(".addr").textContent = urlParams.get("addr");
-                    if (urlParams.get("danger")) {
-                        document.querySelector(".addr").setAttribute("style", "color: red");
-                    }
-                </script>
             </div>
             <!----><!---->
             <div data-v-97f79f28="" class="tip">
@@ -87,5 +78,14 @@
         </div>
     </div>
 </div>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.querySelector(".hidden-tel").textContent = urlParams.get("phone") + "的动态行程卡";
+    document.querySelector(".update").textContent = "更新于：" + moment().format("YYYY.MM.DD HH:mm:ss");
+    document.querySelector(".addr").textContent = urlParams.get("addr");
+    if (urlParams.get("danger")) {
+        document.querySelector(".addr").setAttribute("style", "color: red");
+    }
+</script>
 </body>
 </html>
