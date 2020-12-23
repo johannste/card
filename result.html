@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./result_files/result.b50572c6.css"/>
     <script src="js/moment.min.js"></script>
 </head>
-<body bgcolor="#31C885">
+<body bgcolor="#e0e0e0">
 <noscript>
     <strong>We're sorry but vue-cli3-demo doesn't work properly without JavaScript
         enabled. Please enable it to continue.</strong>
@@ -54,7 +54,6 @@
                     document.querySelector(".hidden-tel").textContent = urlParams.get("phone") + "的动态行程卡";
                     document.querySelector(".update").textContent = "更新于：" + moment().format("YYYY.MM.DD HH:mm:ss");
                     document.querySelector(".addr").textContent = urlParams.get("addr");
-                    console.log(urlParams.get("danger"))
                     if (urlParams.get("danger")) {
                         document.querySelector(".addr").setAttribute("style", "color: red");
                     }
