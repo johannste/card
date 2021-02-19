@@ -21,6 +21,7 @@ body, .result-wrap {
     background: url(../result_files/img_bg@3x.0055ee09.0055ee09.png);
     background-position-y: -21px;
     background-size: cover;
+    width: 100%;
     height: 100vh;
 }
 
