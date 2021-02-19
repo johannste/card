@@ -18,10 +18,9 @@ body, .result-wrap {
 }
 
 .result-wrap .greenBg[data-v-97f79f28] {
-    background: url(../result_files/img_bg@3x.0055ee09.0055ee09.png) no-repeat;
+    background: url(../result_files/img_bg@3x.0055ee09.0055ee09.png);
     background-position-y: -21px;
     background-size: cover;
-    position: relative;
 }
 
 .result-wrap .greenBg .banner-img-holder[data-v-97f79f28] {
